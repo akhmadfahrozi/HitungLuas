@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mtk">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Persegi"
+            android:layout_marginTop="14dp"
+            android:background="#0FFFFF"
+            android:id="@+id/btn_persegi"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEGITIGA"
+            android:layout_marginTop="14dp"
+            android:background="#0FFFFF"
+            android:id="@+id/btn_segitiga"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PERSEGI PANJANG"
+            android:textSize="10dp"
+            android:layout_marginTop="14dp"
+            android:background="#0FFFFF"
+            android:id="@+id/btn_persegipanjang"/>
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8966384247273297/9094113973">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
